@@ -31,7 +31,7 @@ public class Calculator {
                 System.out.println(num1/num2); break;
            
             default:
-                System.out.println("An Invalid Choice!!!!\n");
+                System.out.println("An Invalid Choice!!!\n");
 
 	}
 
