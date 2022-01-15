@@ -69,7 +69,7 @@ public class QuickSort {
 	    // call quicksort() on array data1
 	    QuickSort.quickSort(data, 0, size - 1);
 
-	    System.out.println("Sorted Array in Ascending Order ");
+	    System.out.println("Sorted Array in Ascending Order: ");
 	    System.out.println(Arrays.toString(data));
 	  }
 	}
