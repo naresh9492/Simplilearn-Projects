@@ -21,32 +21,32 @@ public class ExponentialSearch {
 		    sc.close();
 		  }
 		    
-		  private static int exponentialSearch(int[] arr, int searchElement){
+		  private static int exponentialSearch(int[] arr, int ele){
 		    int bound = 1;
 		    // increase upper bound 
-		    while (bound < arr.length && arr[bound] < searchElement) {
+		    while (bound < arr.length && arr[bound] < ele) {
 		      bound *= 2;
 		    }
 		    // do binary search with in the range
-		    return binarySearch(arr, bound/2, Integer.min(bound + 1, arr.length), searchElement);
+		    return binarySearch(arr, bound/2, Integer.min(bound + 1, arr.length), ele);
 		  }
 
-		  private static int binarySearch(int[] arr, int start, int end, int searchElement){
+		  private static int binarySearch(int[] arr, int start, int end, int ele){
 		    // exit condition
 		    if(start > end){
 		      return -1;
 		    }        
 		    int middle = (start+end)/2;
 		    // element found
-		    if(searchElement == arr[middle]){
+		    if(ele == arr[middle]){
 		      return middle;
 		    }
 		    // left half
-		    if(searchElement < arr[middle]){
-		      return binarySearch(arr, start, middle-1, searchElement);
+		    if(ele < arr[middle]){
+		      return binarySearch(arr, start, middle-1, ele);
 		    }else{
 		      // right half
-		      return binarySearch(arr, middle+1, end, searchElement); 
+		      return binarySearch(arr, middle+1, end, ele); 
 		
 	}
 
