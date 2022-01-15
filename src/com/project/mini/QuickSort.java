@@ -72,6 +72,8 @@ public class QuickSort {
 	    System.out.println("Sorted Array in Ascending Order: ");
 	    System.out.println(Arrays.toString(data));
 	  }
+
+	
 	}
 
 	
