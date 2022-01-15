@@ -16,7 +16,7 @@ public class Remember {
 		try{
 			System.out.println("Starting of try block");
 			// I'm throwing the custom exception using throw
-			throw new MyException("This is My error Message");
+			throw new MyException("This is your error Message");
 		}
 		catch(MyException exp){
 			System.out.println("Catch Block") ;
