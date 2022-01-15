@@ -61,12 +61,12 @@ public class QuickSort {
 	  public static void main(String[] args) {
 
 	    int[] data = { 88, 72, 24, 15, 06, 95, 65 };
-	    System.out.println("Unsorted Array");
+	    System.out.println("Unsorted Array:");
 	    System.out.println(Arrays.toString(data));
 
 	    int size = data.length;
 
-	    // call quicksort() on array data
+	    // call quicksort() on array data1
 	    QuickSort.quickSort(data, 0, size - 1);
 
 	    System.out.println("Sorted Array in Ascending Order ");
