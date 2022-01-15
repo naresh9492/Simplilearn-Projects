@@ -1,5 +1,4 @@
 package com.project.mini;
-import java.io.*;
 import java.util.*;
 
 public class OrderStatistics {
@@ -8,7 +7,7 @@ public class OrderStatistics {
 	static PriorityQueue<Integer> min;
 	static int k;
 
-	static List<Integer> getAllKthNumber(int arr[]){
+	static List<Integer> getKthNumber(int arr[]){
 		
 		// list to store kth largest number
 		List<Integer> list = new ArrayList<>();
@@ -49,7 +48,7 @@ public class OrderStatistics {
 
 		int arr[] = { 1, 2, 3, 4, 5, 6 };
 
-		List<Integer> res = getAllKthNumber(arr);
+		List<Integer> res = getKthNumber(arr);
 
 		for (int x : res)
 		System.out.print(x + " ");
