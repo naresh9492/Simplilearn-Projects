@@ -42,7 +42,7 @@ import java.io.*;
 	  }
 	}
 
-	public class TryMe {
+	public class tryCatch {
 	  public static void main(String[] args) {
 	    ListOfNumbers list = new ListOfNumbers();
 	    list.writeList();
