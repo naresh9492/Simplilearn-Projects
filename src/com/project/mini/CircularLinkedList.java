@@ -1,4 +1,4 @@
-package com.access.specifier;
+package com.project.mini;
 
 public class CircularLinkedList {
 	static class Node 
